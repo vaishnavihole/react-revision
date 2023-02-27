@@ -1,10 +1,9 @@
 import react from "react"
 
-const ContactList = () => {
+const ContactList = (props) => {
+    console.log(props);
 
-    <div className="ui called list">
-        Contact List
-    </div>
-}
+   return <div className="ui called list">Contact List </div>
+};
 
 export default ContactList;
