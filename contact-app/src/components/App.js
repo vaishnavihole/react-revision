@@ -14,7 +14,11 @@ function App() {
   };
 
   useEffect(() =>{
-    localStorage.setItem()
+    localStorage.getItem( LOCAL_STORAGE_KEY);
+  },[contacts]);
+
+  useEffect(() =>{
+    localStorage.setItem( LOCAL_STORAGE_KEY, JSON.stringify(contacts));
   },[contacts]);
   return(
     <div className='ui container'>
