@@ -14,7 +14,7 @@ function App() {
   };
 
   useEffect(() =>{
-    localStorage.getItem( LOCAL_STORAGE_KEY);
+    const retriveContacts = JSON.parse(localStorage.getItem( LOCAL_STORAGE_KEY));
   },[contacts]);
 
   useEffect(() =>{
