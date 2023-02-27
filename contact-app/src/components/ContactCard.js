@@ -1,6 +1,6 @@
 import React from "react";
 
-const CardContact = (props) => {
+const ContactCard = (props) => {
    const {id, name, email} = props.contact;
     return (
         <div className="item">

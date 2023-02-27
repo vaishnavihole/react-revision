@@ -1,5 +1,5 @@
 import react from "react"
-import CardContact from "./ContactCard"
+import ContactCard from "./ContactCard"
 
 const ContactList = (props) => {
     console.log(props);
