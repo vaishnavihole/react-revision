@@ -8,7 +8,9 @@ const CardContact = () => {
             <div className="header">{contact.name}</div>
             <div>{contact.email}</div>
         </div>
-        <i className="trash alternate outline icons"></i>
+        <i className="trash alternate outline icons"
+        style={{color:"red", marginTop: "7px"}}></i>
+        
     </div>
     );
 
