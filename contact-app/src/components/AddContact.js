@@ -15,6 +15,7 @@ class  AddContact extends React.Component {
                     <labels>Email</labels>
                     <input type="text" name="email" placeholder="Email" />
                     </div>
+                    <button className="ui button blue">Add</button>
                 </form>
             </div>
         )
