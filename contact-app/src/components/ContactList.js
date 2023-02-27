@@ -3,7 +3,19 @@ import react from "react"
 const ContactList = (props) => {
     console.log(props);
 
-   return <div className="ui called list">Contact List </div>
+    const renderContactList = props.contacts.map((contact) => {
+        return (
+            <div className="item">
+                <div className="content">
+                    <div className="header">{contact.name}</div>
+                    <div>{contact.email}</div>
+                </div>
+                <i className="trash alternate outline icons"></i>
+            </div>
+        )
+    })
+
+   return <div className="ui called list">{renderContactList}</div>
 };
 
 export default ContactList;
