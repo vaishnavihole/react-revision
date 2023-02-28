@@ -34,8 +34,8 @@ function App() {
       <BrowserRouter>
       <Routes>
       <Header />
-      <Route path="/add" component={AddContact} />
       <Route path="/" component={ContactList} />
+      <Route path="/add" component={() => <AddContact addContactHandler={addContactHandler} />}  />
       </Routes>
       </BrowserRouter>
     </div>
