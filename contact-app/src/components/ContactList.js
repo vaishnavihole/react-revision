@@ -15,11 +15,20 @@ const ContactList = (props) => {
     }]
 
     const renderContactList = contacts.map((contact) => {
-        return ( <ContactCard contact={contact}></ContactCard>
+        return ( <ContactCard contact={contact}
+            clickHander= {deleteContactHandler}
+            key={contact.id}
+            />
         );
     });
 
-   return <div className="ui called list">{renderContactList}</div>
+   return (
+   <div class="main">
+    <h2>Contact List</h2>
+   <button className="ui button blue right">Add Contact</button>
+   <div className="ui called list">{renderContactList}</div>
+   </div>
+   );
 };
 
 export default ContactList;
